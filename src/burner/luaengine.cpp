@@ -2203,8 +2203,7 @@ static inline UINT32 gui_getcolour_wrapped(lua_State *L, int offset, UINT8 hasDe
 		}
 	case LUA_TNUMBER:
 		{
-			UINT32 colour = (UINT32) lua_tointeger(L,offset);
-			return colour;
+			return (L->base[offset - 1].value.n >= 0 ? (unsigned int)L->base[offset - 1].value.n : (signed int)L->base[offset - 1].value.n);
 		}
 	case LUA_TTABLE:
 		{
