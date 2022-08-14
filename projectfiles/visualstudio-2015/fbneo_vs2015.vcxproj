@@ -1583,8 +1583,9 @@ del build_details.exe
     <IncludePath>$(DXSDK_DIR)Include;..\..\src\dep\vc\include;$(IncludePath)</IncludePath>
     <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <TargetName>fcadefbneod</TargetName>
+    <TargetName>fcadefbneo</TargetName>
     <CustomBuildBeforeTargets />
+    <OutDir>C:\game\FightCade2\emulator\fbneo\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;..\..\src\dep\vc\include;$(IncludePath)</IncludePath>
@@ -1597,6 +1598,7 @@ del build_details.exe
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <TargetName>fcadefbneo</TargetName>
     <GenerateManifest>true</GenerateManifest>
+    <OutDir>C:\game\FightCade2\emulator\fbneo\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -1615,7 +1617,7 @@ del build_details.exe
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>winspool.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</IgnoreSpecificDefaultLibraries>
-      <OutputFile>$(SolutionDir)\..\..\build\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>C:\game\FightCade2\emulator\fbneo\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <PreBuildEvent>
       <Command>
@@ -1667,7 +1669,7 @@ del build_details.exe
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>winspool.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</IgnoreSpecificDefaultLibraries>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(SolutionDir)\..\..\build\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>C:\game\FightCade2\emulator\fbneo\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <PreBuildEvent>
       <Command>run_scripts.bat</Command>
