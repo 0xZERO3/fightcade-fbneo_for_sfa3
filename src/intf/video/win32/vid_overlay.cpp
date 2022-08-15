@@ -1338,8 +1338,8 @@ void VidOverlaySetSystemMessage(const wchar_t *text)
 	system_message.Set(text);
 }
 
-int nRollbackFrames;
-int nRollbackCount;
+extern int nRollbackFrames;
+extern int nRollbackCount;
 
 // jitter detector
 #define PINGSIZE 10
