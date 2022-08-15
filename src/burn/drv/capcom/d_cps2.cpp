@@ -6555,7 +6555,7 @@ static struct BurnRomInfo Sfz3jr2RomDesc[] = {
 STD_ROM_PICK(Sfz3jr2)
 STD_ROM_FN(Sfz3jr2)
 
-/* ADD-S 0xZERO3: sfz3te */
+/* ADD-S 0xZERO3: sfz3te対応 */
 // https://github.com/0xZERO3/ZERO3TE
 // Street Fighter Zero 3 Training Edition v1.0 (hacked by 0xZERO3)
 static struct BurnRomInfo Sfz3teRomDesc[] = {
@@ -6652,9 +6652,9 @@ static struct BurnRomInfo Sfz3ter2RomDesc[] = {
 
 STD_ROM_PICK(Sfz3ter2)
 STD_ROM_FN(Sfz3ter2)
-/* ADD-E 0xZERO3: sfz3te */
+/* ADD-E 0xZERO3: sfz3te対応 */
 
-/* ADD-S 0xZERO3: sfz3jr2hack(for develop) */
+/* ADD-S 0xZERO3: sfz3jr2hack(動作確認用)対応 */
 static struct BurnRomInfo Sfz3jr2hackRomDesc[] = {
 	{ "sz3hack.03",    0x080000, 0x00000000, CPS2_PRG_68K | BRF_ESS | BRF_PRG },
 	{ "sz3hack.04",    0x080000, 0x00000000, CPS2_PRG_68K | BRF_ESS | BRF_PRG },
@@ -6685,7 +6685,7 @@ static struct BurnRomInfo Sfz3jr2hackRomDesc[] = {
 
 STD_ROM_PICK(Sfz3jr2hack)
 STD_ROM_FN(Sfz3jr2hack)
-/* ADD-E 0xZERO3: sfz3jr2hack(for develop) */
+/* ADD-E 0xZERO3: sfz3jr2hack(動作確認用)対応 */
 
 static struct BurnRomInfo SgemfRomDesc[] = {
 	{ "pcfu.03",       0x080000, 0xac2e8566, CPS2_PRG_68K | BRF_ESS | BRF_PRG },
@@ -11078,7 +11078,7 @@ struct BurnDriver BurnDrvCpsSfz3jr2 = {
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
-/* ADD-S 0xZERO3: sfz3te */
+/* ADD-S 0xZERO3: sfz3te対応 */
 struct BurnDriver BurnDrvCpsSfz3te = {
 	"sfz3te", "sfa3", NULL, NULL, "2019",
 	"Street Fighter Zero 3 (980629 Japan Training Edition v1.0)\0", NULL, "Hack", "CPS2",
@@ -11108,9 +11108,9 @@ struct BurnDriver BurnDrvCpsSfz3ter2 = {
 	Cps2Init, DrvExit, Cps2Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
-/* ADD-E 0xZERO3: sfz3te */
+/* ADD-E 0xZERO3: sfz3te対応 */
 
-/* ADD-S 0xZERO3: sfz3jr2hack(for develop) */
+/* ADD-S 0xZERO3: sfz3jr2hack(動作確認用)対応 */
 struct BurnDriver BurnDrvCpsSfz3jr2hack = {
 	"sfz3jr2hack", "sfa3", NULL, NULL, "2021",
 	"Street Fighter Zero 3 (980629 Japan Hack)\0", NULL, "Hack", "CPS2",
@@ -11120,7 +11120,7 @@ struct BurnDriver BurnDrvCpsSfz3jr2hack = {
 	Cps2Init, DrvExit, Cps2Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
-/* ADD-E 0xZERO3: sfz3jr2hack(for develop) */
+/* ADD-E 0xZERO3: sfz3jr2hack(動作確認用)対応 */
 
 struct BurnDriver BurnDrvCpsSgemf = {
 	"sgemf", NULL, NULL, NULL, "1997",
